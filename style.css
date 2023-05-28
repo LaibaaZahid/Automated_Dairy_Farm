@@ -1,0 +1,240 @@
+body {
+	background: linear-gradient(-45deg, #adadaca6, #114111, #0f4516e9,  rgba(84, 87, 83, 0.696));
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+   
+    
+}
+
+
+.navbar{
+    width: 100%;
+    height: 20px;
+    background-color: rgba(21, 46, 12, 0.844);
+    opacity: 90%;
+    padding: 30px;
+   
+}
+
+.navbar a{
+    margin-left: 60px;
+    padding-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-style: bolder;
+    font-size: larger;
+    margin-right: 60px;
+    padding-right: 40px;
+    
+   
+}
+
+.navbar a:hover{
+    color:  gold;
+   
+}
+
+
+.center{
+    display: flex;
+    flex-direction: row;
+    background-image: url(back2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 70%;
+    border: 1px solid rgb(50, 50, 49);
+    box-shadow: 5px 5px 5px #114111;
+    
+}
+
+.center img{
+    margin-top: 2%;
+    margin-left: 2%;
+    height: 25%;
+    width: 20%;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;  
+}
+
+
+.alerts{
+    height: 200px;
+    width: 350px;
+    background-color: rgba(205, 176, 176, 0.786);
+    opacity: 100%;
+    margin-left: 12%;
+    margin-top: 20px;
+    border: 2px solid rgb(174, 151, 23);
+    color: rgb(21, 67, 29);
+    position: sticky ;
+    box-shadow:5px 10px 8px #081808;
+
+}
+
+.alerts h1{
+    margin-left: 36%;
+    font-weight: 800;
+    font-weight: bolder;
+}
+
+.alerts p{
+    margin: 10px;
+    color: #114111;
+    font-size: large;
+   
+}
+
+.mainline{
+    margin-top: 5%;
+    margin-left: 9%;
+    font-size: 3em;
+    color: white;
+    background-image: linear-gradient(
+      -225deg,
+      #8cb88c 0%,
+      #317234 29%,
+      #1d3515 67%,
+      #081808 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    text-shadow: 5px 5px 5px #7d827d;
+       
+}
+  
+
+.options{
+    display: flex;
+    flex-direction: row;
+   
+
+    
+}
+
+.options div{
+    margin: 20px;
+    padding: 10px;
+    background-color: rgba(222, 220, 100, 0.592);
+    opacity: 60%;
+    width: 30%;
+    height: 33vh;
+    border: 5px solid rgb(111, 83, 33);
+    text-align: center;
+    color: white;
+    font-size: large;
+    font-family: cursive;
+    box-shadow:10px 10px 10px #081808;
+}
+
+.options div h2{
+    color: rgb(13, 50, 13);
+    
+}
+
+.options div button{
+    width: 150px;
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 8px;
+    background-color: #114111;
+    
+   
+}
+
+.options div button:hover{
+    background-color: #317234;
+}
+.options div button.last{
+    margin-top: 39px;
+}
+
+.options div button a{
+    text-decoration: none;
+    color: white;
+}
+
+.picture{
+    width: 100vw;
+    height: 60vh;
+    /* background-image: url(back5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+
+}
+
+.picture img{
+    margin: 30px;
+    margin-left: 10%;
+    animation-name: spin;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.picture h1{
+    color: #ffffff;
+    font-size: 3em;
+    margin: 30px;
+}
+
+
+.line{
+    width: 50%;
+    height: 50%;
+    margin-left: 10%;
+    margin-top: 5%;
+    border: 5px solid gold;
+    border-radius: 5px;
+    background-color: #114111;
+    text-align: center;
+}
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+}
+
+
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@keyframes spin {
+    from {
+        transform:rotateY(0deg);
+    }
+    to {
+        transform:rotateY(360deg);
+    }
+}
+
+    
